@@ -1,0 +1,112 @@
+/* App.css */
+
+/* Global background */
+body {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #6dd5ed 100%);
+  color: #fff;
+  margin: 0;
+}
+
+/* Navbar glass effect */
+.navbar-glass {
+  background: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Buttons */
+.btn-rounded {
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-rounded:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Search input */
+.search-input {
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+/* Card glass effect */
+.card-glass {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  transition: transform 0.2s ease;
+  border: none;
+  color: #fff;
+}
+
+.card-glass:hover {
+  transform: translateY(-5px);
+}
+
+/* Modal glass style */
+.modal-content {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal header */
+.modal-title {
+  font-weight: bold;
+  color: #1e3c72;
+}
+
+/* Inputs inside modal */
+.modal-body input,
+.modal-body textarea {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: border 0.2s;
+}
+
+.modal-body input:focus,
+.modal-body textarea:focus {
+  border-color: #2a5298;
+  outline: none;
+  box-shadow: 0 0 5px rgba(42, 82, 152, 0.4);
+}
+
+/* Sidebar stats */
+.stats-card {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  color: #fff;
+}
+
+/* Floating Action Button (optional) */
+.fab-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ff6f61;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.fab-btn:hover {
+  transform: scale(1.1);
+  background: #ff3b2f;
+}
